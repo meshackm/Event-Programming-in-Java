@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+  ACTIVITY 3: the view, as Scene Builder writes it.
+
+  fx:controller   names the Java class whose @FXML fields and
+                  methods this file binds to.
+  fx:id           matches a field name in that controller.
+  onAction="#m"   calls the controller's method m().
+
+  Note: javafx.geometry.* must be imported for <Insets> to
+  resolve. The guide's listing omits that import, which makes
+  FXMLLoader fail at load time with
+  "ClassNotFoundException: Insets".
+-->
+
+<VBox alignment="CENTER" spacing="15.0"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label text="Login" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+        <TextField fx:id="usernameField" promptText="Username" />
+        <PasswordField fx:id="passwordField" promptText="Password" />
+        <Button fx:id="loginButton" text="Login" onAction="#handleLoginButtonAction" />
+    </children>
+</VBox>

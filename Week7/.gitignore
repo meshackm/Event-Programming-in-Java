@@ -1,0 +1,6 @@
+# Maven output
+target/
+
+# run.sh output
+build/
+lib/

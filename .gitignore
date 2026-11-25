@@ -1,0 +1,13 @@
+# Local editor / tool config
+.claude/
+
+# Has its own git repository and unrelated content
+mist_hill/
+
+# Compiled output
+*.class
+build/
+target/
+
+# JavaFX jars downloaded by run.sh
+lib/
